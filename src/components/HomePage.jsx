@@ -1,10 +1,12 @@
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const HomePage = ()=>{
   return (
     <div>
-      <h1 className="text-4xl bg-amber-500">Deborah</h1>
+      <h1></h1>
       <NavBar />
+      <Footer />
     </div>
   )
 }
