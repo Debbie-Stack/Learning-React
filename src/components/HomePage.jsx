@@ -1,8 +1,8 @@
 import NavBar from "./NavBar";
 import About from "./About";
-import Skills from "./Skills"
-import Call from "./Call"
-import Footer from "./Footer";
+import Skills from "./Skills";
+import Call from "./Call";
+import Footer from "./Footer";  
 
 const HomePage = ()=>{
   return (
