@@ -1,0 +1,65 @@
+PROPS...CHILD
+import Welcome from "./components/Welcome";
+
+const App = ({name, age, gender}) => {
+
+  return (
+    <div> 
+      {/* <Welcome name = "John" age="30"/> */}
+      {/* <Welcome name = "Mike" age="30"/> */}
+      {/* <Welcome name = "Faith" age="30"/> */}
+      {/* <Welcome name = "Joy" age="30"/> */}
+      {/* <Welcome name = "peter" age="30"/> */}
+      <h2>Name: {"John"}</h2>
+      <p>Age: {23}</p>
+      <p>Grade: {"Good"}</p>
+      <h2>Name: {"Mike"}</h2>
+      <p>Age: {33}</p>
+      <p>Grade: {"Pass"}</p>
+      <h2>Name: {"Loveth"}</h2>
+      <p>Age: {20}</p>
+      <p>Grade: {"Excellent"}</p>
+      <h2>Name: {"Jacob"}</h2>
+      <p>Age: {25}</p>
+      <p>Grade: {"Failed"}</p>
+    </div>
+  )
+}
+
+export default App;
+
+
+WELCOME MOTHER
+const Welcome = (props) => {
+  return (
+    <div>
+      <h1>hello,{props.name}</h1>
+    </div>
+  )
+}
+
+export default Welcome;
+
+
+<div className="mb-50">
+      <h2 className="font-bold text-lg">Name: {"John"}</h2>
+      <p className="font-bold text-md">Age: {23}</p>
+      <p>Grade: {"Good"}</p>
+      <img src="./assets/qyou-contact-1166590_640.png" alt="" />
+      </div>
+
+      <div>
+      <h2 className="font-bold text-lg">Name: {"Mike"}</h2>
+      <p className="font-bold text-md">Age: {33}</p>
+      <p>Grade: {"Pass"}</p>
+      </div>
+      <div>
+      <h2 className="font-bold text-lg">Name: {"Loveth"}</h2>
+      <p> Age: {20}</p>
+      <p>Grade: {"Excellent"}</p>
+      </div>
+      <div>
+      <h2 className="font-bold text-lg">Name: {"Jacob"}</h2>
+      <p>Age: {25}</p>
+      <p>Grade: {"Failed"}</p>
+      </div>
