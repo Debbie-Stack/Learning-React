@@ -63,3 +63,89 @@ export default Welcome;
       <p>Age: {25}</p>
       <p>Grade: {"Failed"}</p>
       </div>
+
+
+      
+
+
+
+
+    Alert classwork
+    const Events = () => {
+    function handleClick(){
+        alert("Name:John Adams Age:6 Gender:Male Grade:Excellent(A)")
+    }
+  return (
+    <button onClick={handleClick}className="border-2 p-2 rounded-lg">Click Me</button>
+  );
+}
+
+export default Events
+ 
+ alert3
+ const Events = ()=>{
+    return (
+        <button onClick={()=> alert("Clicked")} className="border-2 p-2">Click Here</button>
+    );
+}
+
+
+Alert4
+const Events = () =>{
+    
+const greet = (name)=>{
+        alert(`Hello, ${name}!`)}
+    return (
+        <div>
+            <button onClick={()=>greet("Femi")}>Greet Femi</button>
+            <button onClick={()=>greet("Michael")}>Greet Michael</button>
+        </div>
+        );
+}
+
+
+export default Events;
+
+
+
+
+<div className="flex justify-center items-center mt-60">
+      Student Login
+         <h1 className="ml-130 font-bold text-xl mb-7 text-white border-b-5">Exams Report for Grade 1 Pupils</h1> 
+      <Welcome name = "John Adams" age="6" gender="Male" grade="Excellent (A)" image={user1}/>
+      <Welcome name = "Mike Jordan" age="7" gender="Male" grade="Good (C)" image={user2}/>
+      <Welcome name = "Faith Ado" age="6" gender="Female" grade="Pass (D)" image={user3}/>
+      <Welcome name = "Joy Yaxs" age="7" gender="Female" grade="Fair (E)" image={user4}/>
+      <Events/>
+    </div>
+
+
+    *HOW TO WRITE EVENTS IN REACT*
+
+    import { useState } from "react"
+
+export default function OnChangeEvent(){
+    
+
+        const [name, setName] = useState("")
+        could change to name,age,status or anything
+        
+        const handleChange=(event)=>{
+            setName(event.target.value)
+        } 
+        const handleSubmit = (event)=>{
+            event.preventDefault()
+            setName("")
+            alert("Submitted")
+            console.log(name)
+        }
+        return (
+            <div className="">
+            <form onSubmit={handleSubmit}>
+            <input type="text" value={name} onChange={handleChange} />
+            <button type="submit">Submit</button>
+            </form>
+            <div>{name}</div>
+        </div>
+    )
+}
