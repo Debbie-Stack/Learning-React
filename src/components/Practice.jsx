@@ -9,7 +9,7 @@ const Practice = ()=>{
     const handleSubmit = (event)=>{
         event.preventDefault()
         setStatus("")
-        alert("Status Uploaded")
+        // alert("")
     }
   return (
     <div className="w-300 mx-auto flex justify-between items-center h-15">
@@ -27,7 +27,7 @@ const Practice = ()=>{
         </div>
         <form onSubmit={handleSubmit}>
             <input type="text" className="border-2 rounded-lg font-[Bold-Sans]" placeholder="search web" value={status} onChange={handleChange} />
-            <button className="border-2 p-1 rounded-lg ml-10 font-[Bold-Sans]" type="submit">Search</button>
+            <button className="border-2 p-1 rounded-lg ml-10 font-[Bold-Sans]" onClick={()=>alert("")} type="submit">Search</button>
         </form>
     </div>
   )

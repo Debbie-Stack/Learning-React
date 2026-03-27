@@ -14,13 +14,22 @@ const Letter = () => {
                 alert("Submitted")
                 console.log(name)
             }
+        const [isMode, setIsMode] = useState(false)
+    
+        const style = {
+            backgroundColor: isMode? "white" : "black",
+            color: isMode? "black" : "white"
+        }
   return (
-    <div className="flex flex-col justify-center items-end w-200 mx-auto py-10 h-screen">
+    <div style={style} className="flex flex-col justify-center items-end w-200 mx-auto py-10 h-screen">
+        <button className='border-2 p-2' onClick={()=>setIsMode(prev => !prev)}>Click Me</button>
+    
         <div>
             <form onSubmit={handleSubmit}>
             <input type="text" value={name} onChange={handleChange} />
             <button type="submit" className="border-2 border-black bg-purple-800 font-bold text-white p-1 ml-5 rounded-lg">Submit</button>
             </form>
+
         </div>
             <div className="text-justify">
             <h1 className="px-60 my-2 font-bold text-xl font-[Open-Sans]">I AM LEARNING REACT</h1>
