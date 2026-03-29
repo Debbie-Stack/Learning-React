@@ -5,9 +5,10 @@
 // import user4 from "./assets/gart-self-portrait-687589.jpg";
 // import Events from "./components/Events";
 import Button from "./components/Button";
-import ClassWork from "./components/classwork";
-import ClassWorkk from "./components/classwork";
+import ClassWork from "./components/ClassWork";
 import Conditional from "./components/Conditional";
+import ConditionPractice from "./components/ConditionPractice";
+import Condition from "./components/ConditionPractice";
 import DarkMode from "./components/DarkMode";
 import OnChangeEvent from "./components/Event";
 import Letter from "./components/Letter";
@@ -20,12 +21,13 @@ const App = () => {
   return (
     <div className="bg-violet-200 h-screen">
         {/* <OnChangeEvent/> */}
-        <Letter/>
+        {/* <Letter/>/ */}
         {/* <ClassWork/> */}
         {/* <Practice/> */}
         {/* <Conditional/> */}
         {/* <Button/> */}
         {/* <DarkMode/> */}
+        <ConditionPractice/>
     </div>
   );
 };
