@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 const ConditionPractice = () => {
     const [isCondition,setIsCondition] = useState(false)
 

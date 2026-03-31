@@ -12,6 +12,7 @@ import Condition from "./components/ConditionPractice";
 import DarkMode from "./components/DarkMode";
 import OnChangeEvent from "./components/Event";
 import Letter from "./components/Letter";
+import Mode from "./components/Mode";
 import Practice from "./components/Practice";
 
 
@@ -19,7 +20,7 @@ import Practice from "./components/Practice";
 const App = () => {
 
   return (
-    <div className="bg-violet-200 h-screen">
+    <div>
         {/* <OnChangeEvent/> */}
         {/* <Letter/>/ */}
         {/* <ClassWork/> */}
@@ -27,7 +28,8 @@ const App = () => {
         {/* <Conditional/> */}
         {/* <Button/> */}
         {/* <DarkMode/> */}
-        <ConditionPractice/>
+        {/* <ConditionPractice/> */}
+        <Mode/>
     </div>
   );
 };
