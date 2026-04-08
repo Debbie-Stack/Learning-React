@@ -12,8 +12,10 @@ import Condition from "./components/ConditionPractice";
 import DarkMode from "./components/DarkMode";
 import OnChangeEvent from "./components/Event";
 import Letter from "./components/Letter";
+import List from "./components/List";
 import Mode from "./components/Mode";
 import Practice from "./components/Practice";
+import Read from "./components/Read";
 
 
 
@@ -29,7 +31,9 @@ const App = () => {
         {/* <Button/> */}
         {/* <DarkMode/> */}
         {/* <ConditionPractice/> */}
-        <Mode/>
+        {/* <Mode/> */}
+        {/* <Read/> */}
+        <List/>
     </div>
   );
 };
