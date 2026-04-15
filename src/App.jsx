@@ -20,7 +20,10 @@ import Practice from "./components/Practice";
 import Read from "./components/Read";
 import UnControlForm from "./components/UnControlForm";
 import Error from "./components/Error";
-import Home from "./components/Home";
+import Home from "./components/pages/Home";
+import AboutPage from "./components/pages/AboutPage";
+import ResumePage from "./components/pages/ResumePage";
+import ContactPage from "./components/pages/ContactPage";
 
 
 
@@ -45,7 +48,9 @@ const App = () => {
 
         <Routes>
           <Route index path="/" element={<Home/>}/>
-          <Route path="mode" element={<DarkMode/>}/>
+          <Route path="about" element={<AboutPage/>}/>
+          <Route path="resume" element={<ResumePage/>}/>
+          <Route path="contact" element={<ContactPage/>}/>
           <Route path="*" element={<Error/>}/>
         </Routes>
     </div>
