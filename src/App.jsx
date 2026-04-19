@@ -21,9 +21,11 @@ import Read from "./components/Read";
 import UnControlForm from "./components/UnControlForm";
 import Error from "./components/Error";
 import Home from "./components/pages/Home";
-import AboutPage from "./components/pages/AboutPage";
-import ResumePage from "./components/pages/ResumePage";
-import ContactPage from "./components/pages/ContactPage";
+import AboutPage from "./components/about-compotent/AboutPage";
+import ResumePage from "./components/resume-component/ResumePage";
+import ContactPage from "./components/contact-component/ContactPage";
+import Nav from "./components/Nav";
+import MainFooter from "./components/MainFooter";
 
 
 
@@ -46,6 +48,7 @@ const App = () => {
         {/* <ControlFormManyInput/> */}
         {/* <UnControlForm/> */}
 
+          <Nav/>
         <Routes>
           <Route index path="/" element={<Home/>}/>
           <Route path="about" element={<AboutPage/>}/>
@@ -53,6 +56,7 @@ const App = () => {
           <Route path="contact" element={<ContactPage/>}/>
           <Route path="*" element={<Error/>}/>
         </Routes>
+          <MainFooter/>
     </div>
   );
 };
