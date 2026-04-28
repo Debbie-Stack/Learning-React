@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom"
+import { UserContext } from './Context'
 
 const Nav = () => {
+  const {setMode} = useContext(UserContext)
   return (
     <div>
       <nav>
@@ -15,10 +17,12 @@ const Nav = () => {
                 <li><Link to={"/about"}>About</Link></li>
                 <li><Link to={"/resume"}>Resume</Link></li>
                 <li><Link to={"/contact"}>Contact</Link></li>
+                <li><Link to={"/form"}>Form</Link></li>
             </ul>
         </div>
         <div>
             <button className='font-bold font-serif'>Menu</button>
+            <button onClick={()=> setMode(prev => !prev)}>Mode</button>
         </div>
         </div>
       </nav>

@@ -26,37 +26,51 @@ import ResumePage from "./components/resume-component/ResumePage";
 import ContactPage from "./components/contact-component/ContactPage";
 import Nav from "./components/Nav";
 import MainFooter from "./components/MainFooter";
-
-
+import Form from "./components/Form";
+import User from "./components/User";
+import Profile from "./components/Profile";
+import Hooks from "./components/Hooks";
+import UseDarkMode from "./components/UseDarkMode";
+import Deborah from "./components/Deborah";
+import UserProvider from "./components/Context";
 
 const App = () => {
-
   return (
     <div>
-        {/* <OnChangeEvent/> */}
-        {/* <Letter/>/ */}
-        {/* <ClassWork/> */}
-        {/* <Practice/> */}
-        {/* <Conditional/> */}
-        {/* <Button/> */}
-        {/* <DarkMode/> */}
-        {/* <ConditionPractice/> */}
-        {/* <Mode/> */}
-        {/* <Read/> */}
-        {/* <List/> */}
-        {/* <ControlForm/> */}
-        {/* <ControlFormManyInput/> */}
-        {/* <UnControlForm/> */}
+      {/* <OnChangeEvent/> */}
+      {/* <Letter/>/ */}
+      {/* <ClassWork/> */}
+      {/* <Practice/> */}
+      {/* <Conditional/> */}
+      {/* <Button/> */}
+      {/* <DarkMode/> */}
+      {/* <ConditionPractice/> */}
+      {/* <Mode/> */}
+      {/* <Read/> */}
+      {/* <List/> */}
+      {/* <ControlForm/> */}
+      {/* <ControlFormManyInput/> */}
+      {/* <UnControlForm/> */}
 
-          <Nav/>
+      <UserProvider>
         <Routes>
-          <Route index path="/" element={<Home/>}/>
-          <Route path="about" element={<AboutPage/>}/>
-          <Route path="resume" element={<ResumePage/>}/>
-          <Route path="contact" element={<ContactPage/>}/>
-          <Route path="*" element={<Error/>}/>
+          <Route path="/" element={<Home />}>
+            <Route path="about" element={<AboutPage />} />
+            <Route path="resume" element={<ResumePage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="form" element={<Form />} />
+          </Route>
+
+          <Route path="/user" element={<User />}>
+            <Route path="profile" element={<Profile />} />
+          </Route>
+
+          <Route path="*" element={<Error />} />
         </Routes>
-          <MainFooter/>
+      </UserProvider>
+      {/* <Hooks/> */}
+      {/* <UseDarkMode/> */}
+      {/* <Deborah/> */}
     </div>
   );
 };

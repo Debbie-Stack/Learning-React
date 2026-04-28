@@ -1,23 +1,17 @@
+import { useContext } from "react"
+import { UserContext } from "./Context"
 
-const Welcome = ({name, age, gender, grade, image
-
-}) => {
+const Welcome = ({name, age, image}) =>{
+  const {user, setUser, style, setmode} = useContext(UserContext)
   return (
-    <div className="flex justify-center items-center gap-10 mb-6">
-      <div className="border-2 rounded-full border-violet-500">
-      <img src={image} alt="user image" className="w-30 h-30 rounded-full" />
-      </div>
-
-      <div className="text-white font-bold text-lg">
-      <h1 className="border-t-3 border-b-3 p-1 border-dashed">Name : {name}</h1>
-      <h1>Age : {age}</h1>
-      <h1>Gender : {gender}</h1>
-      <h1>Grade : {grade}</h1>
-      </div>
+    <div style={style}>
+      <h1>Hello {user.name}</h1>
+      <p>Role {user.role}</p>
+      <h1>age {age}</h1>
+      <img src={image} alt="user-image" />
+      <button onClick={()=>setUser({...user, role:"CEO"})}>Click me</button>
+      <button onClick={()=>setMode(prev => !prev)}>Mode</button>
     </div>
-
-    
   )
 }
-
 export default Welcome
