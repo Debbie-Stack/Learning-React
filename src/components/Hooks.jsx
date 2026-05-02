@@ -12,6 +12,7 @@ const Hooks = () => {
 
 export default Hooks;
 
+// USESTATE HOOK
 export const UseStateHooks = () => {
   const [count, setCount] = useState(0);
 
@@ -35,6 +36,7 @@ export const UseStateHooks = () => {
   );
 };
 
+// USEEFFECT HOOK
 export const UseEffect = () => {
   const [count, setCount] = useState(0);
   function handleIncrease() {
@@ -58,6 +60,7 @@ export const UseEffect = () => {
 import {createContext} from "react"
 import Profile from "./Profile";
 
+// USECONTEXT HOOK
 // create context
 export const UserContext = createContext()
 

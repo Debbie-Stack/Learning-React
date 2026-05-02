@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-
+// USECONTEXT HOOK
 export const UserContext = createContext(null)
 
 // wrap -> this allows u to pass in the value of the context in all your components

@@ -33,6 +33,8 @@ import Hooks from "./components/Hooks";
 import UseDarkMode from "./components/UseDarkMode";
 import Deborah from "./components/Deborah";
 import UserProvider from "./components/Context";
+import Ref from "./components/Ref";
+import Reducer from "./components/Reducer";
 
 const App = () => {
   return (
@@ -52,7 +54,7 @@ const App = () => {
       {/* <ControlFormManyInput/> */}
       {/* <UnControlForm/> */}
 
-      <UserProvider>
+      {/* <UserProvider>
         <Routes>
           <Route path="/" element={<Home />}>
             <Route path="about" element={<AboutPage />} />
@@ -67,10 +69,12 @@ const App = () => {
 
           <Route path="*" element={<Error />} />
         </Routes>
-      </UserProvider>
+      </UserProvider> */}
       {/* <Hooks/> */}
       {/* <UseDarkMode/> */}
       {/* <Deborah/> */}
+      {/* <Ref /> */}
+      <Reducer/>
     </div>
   );
 };
